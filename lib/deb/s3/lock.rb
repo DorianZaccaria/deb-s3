@@ -52,7 +52,7 @@ class Deb::S3::Lock
 
     private
     def lock_path(codename, component = nil, architecture = nil, cache_control = nil)
-      "dists/#{codename}/#{component}/binary-#{architecture}/lockfile"
+      "dists/#{codename}/lockfile"
     end
   end
 end
